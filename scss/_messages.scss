@@ -1,0 +1,130 @@
+.mesgs{
+    float: left;
+    padding-top: 30px;
+    width: 100%;
+
+    p{
+        border-radius: 3px;
+        color: white;
+        font-size: 12px;
+        margin: 0;
+        padding: 10px 15px 10px 17px;
+        width: 100%;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+        letter-spacing: 0.5px;
+    }
+
+    .date_divisor{
+        color: rgba(135, 133, 171, 0.7);
+        width: 100%;
+        letter-spacing: 0.5px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .msg_history{
+        height: 516px;
+        overflow-y: auto;
+        padding: 0px 15px 0 25px;
+        position: relative;
+    }
+
+    .incoming_msg{ display:flex; }
+
+    .incoming_msg_img {
+        display: inline-block;
+        width: 6%;
+        min-width: 50px;
+
+        img{ max-width: 100%; }
+    }
+
+    .received_msg {
+        display: inline-block;
+        padding: 0 0 0 10px;
+        vertical-align: top;
+        width: 92%;
+    }
+
+    .received_withd_msg {
+        max-width: 57%;
+
+        p{
+            background: #111B29 none repeat scroll 0 0;
+        }
+    }
+
+    .time_date {
+        color: #747474;
+        display: block;
+        font-size: 12px;
+        margin: 8px 0 0;
+    }
+
+    .outgoing_msg {
+        overflow: hidden;
+        margin: 26px 0 26px;
+    }
+
+    .sent_msg {
+        float: right;
+        max-width: 46%;
+
+        p{ background: #4A90E2 none repeat scroll 0 0; }
+
+        .time_date{
+            float: right;
+        }
+    }
+}
+
+.typing_status{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 12px;
+
+    span{ margin-left: 10px; }
+}
+
+.type_msg{
+    .msg_icons{
+        border-top: 1px solid #304056;
+        border-bottom: 1px solid #304056;
+        display: flex;
+    }
+
+    .input_msg_write{ display: flex; }
+    .msg_send_btn.msg_icon, input{ border: 1px solid #304056; }
+    .msg_send_btn.msg_icon { min-height: 52px; }
+    input{ border-radius: 0; }
+
+    .incoming_msg + .incoming_msg {
+        .received_msg{
+            margin-left: 6%;
+        }
+        .incoming_msg_img{
+            display: none;
+        }
+    }
+
+    .msg_icon{
+        background: #111B29;
+        color: #9F9EC1;
+        font-size: 26px;
+        border: 0;
+        height: 100%;
+        padding: 12px;
+        line-height: 0;
+        cursor: pointer;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 768px){
+            font-size: 15px;
+        }
+
+        &, a{ color: #9F9EC1; }
+    }
+}

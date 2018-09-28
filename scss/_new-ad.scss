@@ -1,0 +1,47 @@
+.new-ad{
+    label{
+        font-size: 18px;
+        color: white;
+    }
+
+    @media screen and (max-width: 768px){
+        .location{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.gallery--nav-item.is_empty{
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery--item.is_empty{
+    height: 255px;
+    width: 100%;
+    border: 1px solid #304056;
+    border-radius: 8px;
+    background-color: #1E2E40;
+    margin-bottom: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 58px !important;
+        margin-right: 15px;
+        float: left;
+        margin-bottom: 0;
+    }
+
+    span{
+        color: #445260;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.38px;
+        line-height: 23px;
+    }
+}

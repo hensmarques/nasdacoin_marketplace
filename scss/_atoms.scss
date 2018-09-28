@@ -1,0 +1,28 @@
+
+.bg-bluepale{ background: $bg_bluepale; }
+.bg-blue{ background: $bg_blue; }
+.tx-teal{ color: #50E3C2; }
+.tx-13{ font-size: 13px; }
+.tx-alert, .text-alert{ color: #fbfb76; }
+.tx-blue{ color: #23BEF5; }
+.tx-green{ color: #20CDA6; }
+.br-8{ border-radius: 8px; }
+
+.tx-white:hover{ color: white !important; }
+
+.img-center{
+    display:block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+.no-bg{
+    background: transparent !important;
+}
+
+.text-lightgray{
+    color: #868ba1;
+
+    &:hover{ color: #868ba1; }
+}

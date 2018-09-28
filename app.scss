@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text');
+
+$blue_lighter: #26ABD2;
+$blue_darker: #0A0B22;
+$blue_dark: #24243F;
+
+$bg_bluepale : linear-gradient(to right, #080e1f 0%, #0c1e2f 100%); // rgba(20,32,49,0.77);
+$bg_blue : linear-gradient(to right, #080e1f 0%, #0c1e2f 100%);
+
+
+@import 'scss/atoms';
+@import 'scss/globals';
+
+// PAGES
+@import 'scss/page-main';
+@import 'scss/page-product';
+@import 'scss/new-ad';
+
+
+// COMPONENTS
+@import 'scss/seller-info';
+@import 'scss/location-picker';
+@import 'scss/product-card';
+@import 'scss/gallery';
+@import 'scss/messages';

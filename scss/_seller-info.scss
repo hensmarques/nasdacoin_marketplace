@@ -1,0 +1,51 @@
+.seller-info{
+    @media screen and (max-width: 768px){
+        &--main{
+            display: flex;
+            justify-content: center;
+        }
+
+        &--location{
+            justify-content: center;
+            margin: 10px 0;
+        }
+    }
+
+    &--stats{
+        justify-content: flex-end;
+
+        @media screen and (max-width: 768px){
+            justify-content: center;
+        }
+    }
+
+    &--picture{
+        border-radius: 50%;
+        border: 2px solid #536881;
+    }
+
+    &--stat{
+        text-align: center;
+        padding: 8px 15px;
+        flex: 0 0 100px;
+
+        small{ margin-bottom: 12px; }
+
+        &.active{
+            p{ color: #3BB9E3; }
+            border-bottom: 2px solid #3BB9E3;
+        }
+    }
+
+    &--rating{
+        flex: 0 0 140px;
+        max-width: 140px;
+        padding-top: 10px;
+        margin-left: 15px;
+
+        .stars{
+            &-bg, &-rating{ background-size: 110px; }
+            &-bg { height: 20px;}
+        }
+    }
+}

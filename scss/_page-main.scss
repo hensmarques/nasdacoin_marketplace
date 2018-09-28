@@ -1,0 +1,34 @@
+.body-marketplace{
+    .btn.btn-block {
+        padding: 9px;
+        font-size: 17px;
+    }
+
+    .btn-success{ background-color: #34B512; }
+
+    .search-category{
+
+        @media screen and (max-width: 768px){
+            justify-content: center;
+        }
+
+        > div {
+            text-align: center;
+
+            @media screen and (max-width: 768px){
+                flex: 0 0 90px;
+                border-right: none;
+                border-bottom: 1px solid rgba(225, 225, 225, 0.17);
+                padding: 7px 0;
+            }
+
+            @media screen and (min-width: 769px){
+                border-right: 1px solid rgba(225, 225, 225, 0.17);
+                &:last-child{ border: none; }
+            }
+        }
+
+        img{ margin-bottom: 8px; }
+        p{ color: white; font-size: 11px; }
+    }
+}

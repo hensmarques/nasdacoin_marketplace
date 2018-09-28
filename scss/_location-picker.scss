@@ -1,0 +1,35 @@
+.location-picker{
+    position: relative;
+
+    &.active &--list{ max-height: 150px; }
+    &:not(.active) &--list{ border: none; }
+
+    &--list{
+        position: absolute;
+        top: calc(100% + 5px);
+        width: 100%;
+        max-height: 0px;
+        transition: max-height .6s;
+        z-index: 10;
+        padding: 0;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            li{
+                padding: 5px 15px;
+                border-radius: 8px;
+                cursor: pointer;
+
+                a{ color: white; }
+
+                &:hover{
+                    background: #0c1427;
+                    a{ color: white; }
+                }
+            }
+        }
+    }
+}

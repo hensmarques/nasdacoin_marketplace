@@ -1,0 +1,77 @@
+.pcw {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  width: 100%; }
+  .pcw.pcw-visible {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1; }
+  .pcw .pcw-arrow-icon {
+    display: none; }
+  .pcw .pcw-change-indicator.pcw-rise > .pcw-arrow-rise {
+    display: inline-block; }
+  .pcw .pcw-change-indicator.pcw-drop > .pcw-arrow-drop {
+    display: inline-block; }
+  .pcw .pcw-rise,
+  .pcw .fa-arrow-up {
+    color: green; }
+  .pcw .pcw-drop,
+  .pcw .fa-arrow-down {
+    color: red; }
+  .pcw.pcw-ticker {
+    overflow: hidden;
+    cursor: pointer; }
+    .pcw.pcw-ticker .js-marquee {
+      margin-right: 0 !important; }
+  .pcw.pcw-table .pcw-field-LOGO, .pcw.pcw-table .pcw-field-LOGO64 {
+    text-align: center; }
+    .pcw.pcw-table .pcw-field-LOGO img, .pcw.pcw-table .pcw-field-LOGO64 img {
+      height: 35px;
+      width: auto;
+      vertical-align: middle; }
+  .pcw .pcw-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    padding-top: 5%;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    z-index: 9999; }
+    .pcw .pcw-modal .pcw-modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 2rem;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 1024px; }
+      @media screen and (max-width: 799px) {
+        .pcw .pcw-modal .pcw-modal-content {
+          width: 100%; } }
+      .pcw .pcw-modal .pcw-modal-content .pcw-modal-close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 2.5rem;
+        font-weight: bold; }
+      .pcw .pcw-modal .pcw-modal-content .pcw-modal-close:hover,
+      .pcw .pcw-modal .pcw-modal-content .pcw-modal-close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer; }
+
+.pcw-clearfix {
+  clear: both; }

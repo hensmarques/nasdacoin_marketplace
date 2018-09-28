@@ -1,0 +1,69 @@
+.body-marketplace{
+
+    .products-list .col-xl-2{
+        @media screen and (min-width: 1025px) and (max-width: 1400px){
+            max-width: 25% !important;
+            flex: 0 0 25% !important;
+        }
+
+        @media screen and (min-width: 1401px){
+            max-width: 16.66666% !important;
+            flex: 0 0 16.66666% !important;
+        }
+    }
+
+    .product{
+
+        .stars-bg{
+            width: 165px;
+            height: 25px;
+
+            &-bg, &-rating{ background-size: 165px; }
+        }
+
+        @media screen and (max-width: 768px){
+            .product--description{
+                margin-top: 20px;
+            }
+
+            &-panel{
+                .panel-gallery{ order: 2; }
+                .panel-info{ order: 1; }
+                .panel-desc{ order: 3; }
+                .panel-action{ order: 4; }
+            }
+
+            h1{ font-size: 32px; }
+            h2{ font-size: 25px; }
+            .product--address {
+                margin-bottom: 20px;
+
+                p{ font-size: 15px; }
+            }
+
+            .pin{
+                margin-left: 15px !important;
+                width: 30px;
+            }
+        }
+
+    }
+
+    .map{
+        border: 3px solid #304056;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
+
+.stars{
+    &-bg, &-rating{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &-bg{ background-image: url('/icns/stars-bg.png'); }
+    &-rating{ background-image: url('/icns/stars.png'); }
+}
